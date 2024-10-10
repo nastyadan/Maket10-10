@@ -1,0 +1,21 @@
+body {
+    background-color: rgb(3, 179, 26);
+}
+
+.yellow_line {
+    width: 72px;
+
+    border: 2px #FBD784 solid;
+}
+
+.scroll_line {
+    width: 240px;
+
+    border: 3px #D9D9D9 solid;
+}
+
+.scroller_line {
+    width: 60px;
+
+    border: 3px #FFFFFF solid;
+}
