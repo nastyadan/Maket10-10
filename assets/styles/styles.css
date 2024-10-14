@@ -1,4 +1,7 @@
 body {
+
+    color: #FFFFFF;
+
     background-color: rgb(3, 179, 26);
 }
 
@@ -18,4 +21,10 @@ body {
     width: 60px;
 
     border: 3px #FFFFFF solid;
+}
+
+#div_with_background-image {
+    height: 1865px;
+
+    background-image: url("../images/backgroung_image.png");
 }
