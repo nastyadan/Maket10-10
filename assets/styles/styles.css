@@ -1,5 +1,8 @@
 body {
+    display: grid;
 
+    font-family: "Red Hat Display", Arial, sans-serif;
+    font-weight: bold;
     color: #FFFFFF;
 
     background-color: rgb(3, 179, 26);
@@ -23,8 +26,79 @@ body {
     border: 3px #FFFFFF solid;
 }
 
-#div_with_background-image {
+/*bocks*/
+main,
+footer {
+    margin: 0 229px 0 229px;
+}
+
+header {
     height: 1865px;
+    padding: 64px 80px -1 80px;
 
     background-image: url("../images/backgroung_image.png");
+}
+
+.first_line_in_header {
+    display: flex;
+    justify-content: space-between;
+    height: 25px;
+}
+
+.nav_a {
+    padding-right: 40px;
+}
+
+.aside {
+    height: 720px;
+}
+
+.blog_text {
+    width: 632px;
+    height: 439px;
+}
+
+
+/*a*/
+a {
+    color: #FFFFFF;
+
+    text-decoration: none;
+}
+
+/*images*/
+
+.number_img {
+    width: 240px;
+    height: 240px;
+}
+
+.blog_images {
+    width: 566px;
+    height: 720px;
+}
+
+#logo_header {
+    width: 108px;
+    height: 24px;
+}
+
+#logo_footer {
+    width: 108.51px;
+    height: 38.56px;
+}
+
+#bigger_number_image {
+    width: 275px;
+}
+
+/*buttoms*/
+
+.account_buttom {
+    font-family: "Red Hat Display", Arial, sans-serif;
+    font-weight: bold;
+    color: #FFFFFF;
+
+    background: none;
+    border: none;
 }

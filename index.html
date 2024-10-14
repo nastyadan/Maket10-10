@@ -7,23 +7,29 @@
     <title>A Hiking Guide</title>
     <link rel="stylesheet" href="assets/styles/normalize-css.css">
     <link rel="stylesheet" href="assets/styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <header id="div_with_background-image">
-        <div>
-            <img src="assets/images/Logo.svg" alt="logo">
-        </div>
-        <nav>
-            <a href="">Equipment</a>
-            <a href="">About us</a>
-            <a href="">Blog</a>
-        </nav>
-        <div>
-            <button>
-                <img src="assets/images/account_enterense.png" alt="account_enterense">
-                <p>Account</p>
-            </button>
+    <header>
+        <div class="first_line_in_header">
+            <div>
+                <img id="logo_header" src="assets/images/Logo.svg" alt="logo">
+            </div>
+            <nav>
+                <a class="nav_a" href="">Equipment</a>
+                <a class="nav_a" href="">About us</a>
+                <a class="nav_a" href="">Blog</a>
+            </nav>
+            <div>
+                <button class="account_buttom">
+                    <img src="assets/images/account_enterense.png" alt="account_enterense">
+                    <p>Account</p>
+                </button>
+            </div>
         </div>
         <div>
             <p>Follow us</p>
@@ -55,10 +61,10 @@
     </header>
     <main>
         <section>
-            <aside>
+            <aside class="aside">
                 <div>
-                    <img src="assets/images/number01.png" alt="first">
-                    <div>
+                    <img class="number_image" src="assets/images/number01.png" alt="first">
+                    <div class="blog_text">
                         <div>
                             <p class="yellow_line"></p>
                             <h6>GEt Started</h6>
@@ -73,12 +79,12 @@
                         </button>
                     </div>
                 </div>
-                <img src="assets/images/image1.png" alt=" hiking">
+                <img class="blog_images" src="assets/images/image1.png" alt=" hiking">
             </aside>
-            <aside>
+            <aside class="aside">
                 <div>
-                    <img src="assets/images/num2.png" alt="second">
-                    <div>
+                    <img id="bigger_number_image" class="number_image" src="assets/images/num2.png" alt="second">
+                    <div class="blog_text">
                         <div>
                             <p class="yellow_line"></p>
                             <h6>Hiking Essentials</h6>
@@ -93,12 +99,12 @@
                         </button>
                     </div>
                 </div>
-                <img src="assets/images/image2.png" alt=" hiking">
+                <img class="blog_images" src="assets/images/image2.png" alt=" hiking">
             </aside>
-            <aside>
+            <aside class="aside">
                 <div>
-                    <img src="assets/images/num3.png" alt="second">
-                    <div>
+                    <img class="number_image" src="assets/images/num3.png" alt="second">
+                    <div class="blog_text">
                         <div>
                             <p class="yellow_line"></p>
                             <h6>where you go is the key</h6>
@@ -113,14 +119,14 @@
                         </button>
                     </div>
                 </div>
-                <img src="assets/images/image3.png" alt=" hiking">
+                <img class="blog_images" src="assets/images/image3.png" alt=" hiking">
             </aside>
         </section>
     </main>
 
     <footer>
         <div>
-            <img src="assets/images/Logo.svg" alt="logo"></img>
+            <img id="logo_footer" src="assets/images/Logo.svg" alt="logo"></img>
             <p>Get out there & discover your next slope, mountain & destination!</p>
         </div>
         <adress>
