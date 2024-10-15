@@ -125,14 +125,26 @@ a {
 }
 
 /*buttoms*/
-
-.account_buttom {
-    font-family: "Red Hat Display", Arial, sans-serif;
-    font-weight: bold;
-    color: #FFFFFF;
-
+.button {
     background: none;
     border: none;
+}
+
+.account_buttom {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    width: 98px;
+    height: 24px;
+    padding: 0;
+    font-family: "Red Hat Display", Arial, sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+    color: #FFFFFF;
+}
+
+.text_account_buttom {
+    margin: 0;
 }
 
 /*h*/
