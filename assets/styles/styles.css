@@ -1,15 +1,15 @@
 body {
-    display: grid;
+    position: relative;
 
     font-family: "Red Hat Display", Arial, sans-serif;
     font-weight: bold;
-
     color: #FFFFFF;
 
-    background-color: rgb(3, 179, 26);
+    background-color: #0B1D26;
 }
 
 .yellow_line {
+    box-sizing: border-box;
     width: 72px;
     height: 0;
     margin: 0;
@@ -27,12 +27,34 @@ body {
 }
 
 /*bocks*/
-main,
-footer {
-    margin: 0 229px 0 229px;
+
+
+.contaner {
+    position: absolute;
+    top: 1449px;
+
+    display: grid;
+    grid-template-columns: 1fr 90% 1fr;
+    width: 100%;
 
     font-size: 18px;
 }
+
+main,
+footer {
+    grid-column: 2/3;
+}
+
+main {
+    display: grid;
+    grid-template-rows: 720px 200px 720px 200px 720px 200px;
+}
+
+footer {
+    grid-row: 7/8;
+}
+
+
 
 header {
     box-sizing: border-box;
@@ -154,25 +176,80 @@ header {
 }
 
 .aside {
+    box-sizing: border-box;
+    padding: 80px;
 
     display: flex;
     justify-content: space-between;
-    height: 620px;
-    margin-bottom: 200px;
+    align-items: center;
+}
+
+.aside1 {
+    grid-row: 1/2;
+}
+
+.aside2 {
+    grid-row: 3/4;
+}
+
+.aside3 {
+    grid-row: 5/6;
+}
+
+.h4_div {
+    grid-row: 1/2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 278px;
+    height: 22px;
+
+    letter-spacing: 6px;
+    font-weight: 900;
+    color: #FBD784;
+}
+
+.h4_div2 {
+    width: 370px;
+}
+
+.h4_div3 {
+    width: 475px;
 }
 
 .blog_text {
-    width: 550px;
+    position: relative;
+    display: grid;
+    grid-template-rows: 22px 1fr 154px 1fr 160px 1fr 22px;
+    width: 600px;
     height: 439px;
 }
 
 .text_article {
-    width: 550px;
+    grid-row: 5/6;
+    width: 600px;
     height: 160px;
     margin: 0;
 
     line-height: 32px;
+}
 
+.article_button {
+    grid-row: 7/8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 127px;
+    height: 22px;
+    padding: 0;
+
+    color: #FBD784;
+}
+
+.read-more_p {
+    width: 87px;
+    height: 22px;
+    margin: 0;
 }
 
 
@@ -185,14 +262,17 @@ a {
 
 /*images*/
 
-.number_img {
+.number_image {
+    position: absolute;
+    left: -85px;
+    top: -85px;
     width: 240px;
     height: 240px;
 }
 
 .blog_images {
-    width: 566px;
-    height: 620px;
+    width: 500px;
+    height: 690px;
 }
 
 #logo_header {
@@ -228,9 +308,7 @@ a {
     color: #FFFFFF;
 }
 
-.text_account_buttom {
-    margin: 0;
-}
+
 
 /*h*/
 .h1 {
@@ -245,6 +323,11 @@ a {
 }
 
 .h3 {
+    grid-row: 3/4;
+    width: 555px;
+    height: 154px;
+    margin: 0;
+
     font-family: "Playfair Display", serif;
     font-size: 64px;
 }
