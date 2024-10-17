@@ -52,6 +52,13 @@ main {
 
 footer {
     grid-row: 7/8;
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    grid-template-columns: repeat(3, 3fr);
+    justify-items: center;
+    box-sizing: border-box;
+    height: 800px;
+    padding: 0 80px;
 }
 
 
@@ -184,12 +191,14 @@ header {
     align-items: center;
 }
 
+
 .aside1 {
     grid-row: 1/2;
 }
 
 .aside2 {
     grid-row: 3/4;
+
 }
 
 .aside3 {
@@ -252,6 +261,34 @@ header {
     margin: 0;
 }
 
+.footer2,
+.footer3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.footer2 {
+    height: 300px;
+}
+
+.footer3 {
+    height: 200px;
+}
+
+.footer4 {
+    justify-self: start;
+
+    font-weight: normal;
+    font-style: italic;
+}
+
+.p_footer {
+    margin: 0;
+
+    color: #FBD784;
+}
 
 /*a*/
 a {
