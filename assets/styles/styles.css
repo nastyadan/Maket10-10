@@ -53,11 +53,11 @@ main {
 footer {
     grid-row: 7/8;
     display: grid;
-    grid-template-rows: 2fr 1fr;
-    grid-template-columns: repeat(3, 3fr);
-    justify-items: center;
+    grid-template-rows: 1fr 20%;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: start;
     box-sizing: border-box;
-    height: 800px;
+    height: 500px;
     padding: 0 80px;
 }
 
@@ -270,16 +270,21 @@ header {
 }
 
 .footer2 {
-    height: 300px;
+    height: 250px;
+}
+
+.a_container {
+    justify-self: end;
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
 }
 
 .footer3 {
-    height: 200px;
+    height: 150px;
 }
 
 .footer4 {
-    justify-self: start;
-
     font-weight: normal;
     font-style: italic;
 }
