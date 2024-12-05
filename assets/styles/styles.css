@@ -1,5 +1,21 @@
 @media screen and (max-width: 767px) {
 
+    * {
+        margin: 0;
+    }
+
+    header {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 50px 20px 0 20px;
+        margin-bottom: 80px;
+
+
+        font-size: 1em;
+
+        text-align: center;
+    }
+
 
     .yellow-div_header {
         display: flex;
@@ -17,21 +33,10 @@
         align-items: center;
     }
 
-
-    header {
-        box-sizing: border-box;
-        width: 100%;
-        padding-top: 50px;
-        padding-left: 10px;
-        padding-right: 10px;
-
-        font-size: 1em;
-
-        text-align: center;
-    }
-
     .first_line_in_header {
         margin-bottom: 30px;
+
+        text-align: center;
     }
 
     .div__logo,
@@ -44,16 +49,35 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-
+        align-items: center;
     }
 
-    .nav_a {
-        padding-right: 15px;
+    .nav_a,
+    .nav_a3 {
+        width: 100px;
+
     }
 
     .div__account {
         display: flex;
         justify-content: center;
+    }
+
+    .account_buttom {
+        width: 100px;
+        height: 24px;
+        padding: 0;
+
+        font-family: "Red Hat Display", Arial, sans-serif;
+        font-weight: bold;
+        font-size: 17px;
+        color: #FFFFFF;
+
+        text-align: center;
+    }
+
+    .img__account {
+        display: none;
     }
 
     .contaner_header {
@@ -105,135 +129,108 @@
         height: 22px;
     }
 
-
-
     .scroller_div {
         display: none;
     }
 
-
     .contaner__main {
-
-        grid-template-columns: 1fr 90% 1fr;
         width: 100%;
+        margin-bottom: 80px;
 
-        font-size: 15px;
+        font-size: 1.125em;
     }
-
-
-
-    .contaner__main,
-    .contaner__footer {
-        position: absolute;
-
-
-        display: grid;
-        grid-template-columns: 1fr 90% 1fr;
-        width: 100%;
-
-        font-size: 18px;
-    }
-
-    .contaner__main {
-        top: 1449px;
-    }
-
-    .contaner__footer {
-        top: 4209px;
-    }
-
-    main,
-    footer {
-        grid-column: 2/3;
-    }
-
-    main {
-
-        grid-template-rows: 720px 200px 720px 200px 720px 200px;
-    }
-
-    footer {
-        grid-row: 7/8;
-        display: grid;
-        grid-template-rows: 1fr 20%;
-        grid-template-columns: repeat(2, 1fr);
-        justify-items: start;
-        box-sizing: border-box;
-        height: 500px;
-        padding: 0 80px;
-    }
-
 
 
     .article {
         box-sizing: border-box;
-        padding: 80px;
+        width: 100vw;
+        height: 1324px;
+        padding: 80px 40px;
 
         display: flex;
+        flex-direction: column-reverse;
         justify-content: space-between;
         align-items: center;
     }
 
-
-    .article1 {
-        grid-row: 1/2;
-    }
-
     .article2 {
-        grid-row: 3/4;
-
+        flex-direction: column;
     }
 
-    .article3 {
-        grid-row: 5/6;
+    .number_image {
+        position: absolute;
+        top: -85px;
+        width: 100%;
+        height: 340px;
+    }
+
+    .blog_images {
+        width: 100%;
+        height: 400px;
     }
 
     .h4_div {
         grid-row: 1/2;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
-        width: 278px;
+        width: 100%;
         height: 22px;
 
         letter-spacing: 6px;
-        font-weight: 900;
         color: #FBD784;
+
+        text-align: center;
     }
 
-    .h4_div2 {
-        width: 370px;
-    }
-
+    .h4_div2,
     .h4_div3 {
-        width: 475px;
+        height: 40px;
+        margin: 0;
+        text-align: center;
     }
+
+    .h4 {
+        margin: 0;
+    }
+
+    .h3 {
+        grid-row: 3/4;
+        width: 100%;
+        height: 154px;
+        margin: 0;
+
+        font-family: "Playfair Display", serif;
+        font-size: 2.5em;
+    }
+
 
     .blog_text {
         position: relative;
         display: grid;
-        grid-template-rows: 22px 1fr 154px 1fr 160px 1fr 22px;
-        width: 600px;
-        height: 439px;
+        width: 100%;
+        grid-template-rows: 50px 1fr 180px 1fr 250px 1fr 40px;
+        height: 604px;
+
+        text-align: center;
     }
+
 
     .text_article {
         grid-row: 5/6;
-        width: 600px;
-        height: 160px;
-        margin: 0;
+        width: 100%;
 
-        line-height: 32px;
+        line-height: 1.5em;
     }
 
     .article_button {
         grid-row: 7/8;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
-        width: 127px;
-        height: 22px;
-        padding: 0;
+        width: 100%;
+        height: 40px;
+        padding: 0 100px;
 
         color: #FBD784;
     }
@@ -244,32 +241,37 @@
         margin: 0;
     }
 
-    .footer2,
-    .footer3 {
+    /*
+    display: grid;
+        grid-template-rows: 1fr 20%;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: start;
+    */
+
+    footer {
+        box-sizing: border-box;
+        padding: 0 20px;
+        height: 300px;
+        margin-bottom: 10px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
 
-    }
-
-    .footer2 {
-        height: 250px;
+        font-size: 0.8em;
     }
 
     .a_container {
-        justify-self: end;
         display: flex;
         justify-content: space-between;
-        width: 500px;
+        width: 100%;
+        height: 110px;
     }
 
+    .footer2,
     .footer3 {
-        height: 150px;
-    }
-
-    .footer4 {
-        font-weight: normal;
-        font-style: italic;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
     }
 
     .p_footer {
@@ -278,26 +280,17 @@
         color: #FBD784;
     }
 
+    .footer4 {
+        height: 71px;
+        font-weight: normal;
+        font-style: italic;
+    }
+
     /*a*/
     a {
         color: #FFFFFF;
 
         text-decoration: none;
-    }
-
-    /*images*/
-
-    .number_image {
-        position: absolute;
-        left: -85px;
-        top: -85px;
-        width: 240px;
-        height: 240px;
-    }
-
-    .blog_images {
-        width: 500px;
-        height: 690px;
     }
 
     #logo_header {
@@ -310,9 +303,7 @@
         height: 38.56px;
     }
 
-    #bigger_number_image {
-        width: 275px;
-    }
+
 
     /*buttoms*/
     .button {
@@ -320,33 +311,7 @@
         border: none;
     }
 
-    .account_buttom {
-        display: flex;
-        justify-content: space-between;
-        align-content: center;
-        width: 98px;
-        height: 24px;
-        padding: 0;
-        font-family: "Red Hat Display", Arial, sans-serif;
-        font-weight: bold;
-        font-size: 17px;
-        color: #FFFFFF;
-    }
-
-
-
     /*h*/
-
-
-    .h3 {
-        grid-row: 3/4;
-        width: 555px;
-        height: 154px;
-        margin: 0;
-
-        font-family: "Playfair Display", serif;
-        font-size: 64px;
-    }
 
 
 }
