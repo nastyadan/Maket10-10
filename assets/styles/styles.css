@@ -4,6 +4,10 @@
         margin: 0;
     }
 
+    body {
+        min-height: 4851px;
+    }
+
     header {
         box-sizing: border-box;
         width: 100%;
@@ -145,7 +149,7 @@
         box-sizing: border-box;
         width: 100vw;
         height: 1324px;
-        padding: 80px 40px;
+        padding: 80px 20px;
 
         display: flex;
         flex-direction: column-reverse;
@@ -209,7 +213,7 @@
         position: relative;
         display: grid;
         width: 100%;
-        grid-template-rows: 50px 1fr 180px 1fr 250px 1fr 40px;
+        grid-template-rows: 50px 1fr 180px 1fr 230px 1fr 40px;
         height: 604px;
 
         text-align: center;
@@ -240,13 +244,6 @@
         height: 22px;
         margin: 0;
     }
-
-    /*
-    display: grid;
-        grid-template-rows: 1fr 20%;
-        grid-template-columns: repeat(2, 1fr);
-        justify-items: start;
-    */
 
     footer {
         box-sizing: border-box;
@@ -319,59 +316,17 @@
 @media screen and (min-width: 768px) and (max-width: 1023px) {
 
     body {
-        position: relative;
+        min-height: 5093px;
     }
-
-    .contaner__main,
-    .contaner__footer {
-        position: absolute;
-
-
-        display: grid;
-        grid-template-columns: 1fr 90% 1fr;
-        width: 100%;
-
-        font-size: 18px;
-    }
-
-    .contaner__main {
-        top: 1449px;
-    }
-
-    .contaner__footer {
-        top: 4209px;
-    }
-
-    main,
-    footer {
-        grid-column: 2/3;
-    }
-
-    main {
-
-        grid-template-rows: 720px 200px 720px 200px 720px 200px;
-    }
-
-    footer {
-        grid-row: 7/8;
-        display: grid;
-        grid-template-rows: 1fr 20%;
-        grid-template-columns: repeat(2, 1fr);
-        justify-items: start;
-        box-sizing: border-box;
-        height: 500px;
-        padding: 0 80px;
-    }
-
-
 
     header {
         box-sizing: border-box;
-        width: 100%;
-        height: 1865px;
+        padding-left: 20px;
+        padding-right: 20px;
+        max-width: 100%;
+        height: 1000px;
         padding-top: 64px;
-        padding-left: 80px;
-        padding-right: 80px;
+        margin-bottom: 80px;
 
         font-size: 18px;
 
@@ -382,7 +337,7 @@
         display: flex;
         justify-content: space-between;
         height: 25px;
-        margin-bottom: 198px;
+        margin-bottom: 160px;
     }
 
     .nav_a {
@@ -390,22 +345,20 @@
     }
 
     .contaner_header {
+        box-sizing: content-box;
         display: grid;
-        grid-template-columns: 24px 1fr 950px 1fr 77px;
-
+        grid-template-columns: 98px 60px 490px 77px;
         align-items: center;
-
-
     }
 
     .follow-us_div {
         grid-column: 1/2;
-        justify-self: start;
         display: flex;
         justify-content: space-between;
+        transform: rotate(-90deg);
         width: 173px;
         height: 24px;
-        transform: rotate(-90deg);
+
     }
 
     .text_follow-us {
@@ -418,9 +371,8 @@
         grid-column: 3/4;
         display: flex;
         flex-wrap: wrap;
-        justify-content: flex-start;
         align-content: space-between;
-        width: 950px;
+        width: px;
         height: 410px;
     }
 
@@ -432,6 +384,18 @@
         height: 22px;
     }
 
+    .h1 {
+        width: 490px;
+        height: 240px;
+        margin: 0;
+
+        font-family: "Playfair Display", serif;
+        font-size: 60px;
+        line-height: 60px;
+        font-weight: bold;
+        font-style: italic;
+    }
+
     .scroll-down_div {
         width: 126px;
         height: 24px;
@@ -441,7 +405,7 @@
     }
 
     .scroller_div {
-        grid-column: 5/6;
+        grid-column: 4/5;
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
@@ -484,27 +448,49 @@
         border: 3px #FFFFFF solid;
     }
 
+    .contaner__main {
+        margin-bottom: 80px;
+    }
+
     .article {
         box-sizing: border-box;
         padding: 80px;
+        margin-bottom: 50px;
 
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
         align-items: center;
     }
 
-
-    .article1 {
-        grid-row: 1/2;
-    }
-
     .article2 {
-        grid-row: 3/4;
-
+        flex-direction: column-reverse;
     }
 
-    .article3 {
-        grid-row: 5/6;
+    .blog_text {
+        position: relative;
+        display: grid;
+        grid-template-rows: 22px 1fr 154px 1fr 160px 1fr 22px;
+        width: 600px;
+        height: 439px;
+        margin-bottom: 50px;
+    }
+
+    .number_image {
+        position: absolute;
+        right: 0;
+        top: -55px;
+        width: 240px;
+        height: 240px;
+    }
+
+    #bigger_number_image {
+        width: 275px;
+    }
+
+    .blog_images {
+        width: 600px;
+        height: 550px;
     }
 
     .h4_div {
@@ -526,14 +512,6 @@
 
     .h4_div3 {
         width: 475px;
-    }
-
-    .blog_text {
-        position: relative;
-        display: grid;
-        grid-template-rows: 22px 1fr 154px 1fr 160px 1fr 22px;
-        width: 600px;
-        height: 439px;
     }
 
     .text_article {
@@ -563,6 +541,20 @@
         margin: 0;
     }
 
+    footer {
+        box-sizing: border-box;
+        height: 300px;
+        padding: 0 80px;
+        margin-bottom: 20px;
+    }
+
+
+    .a_container {
+        display: flex;
+        justify-content: space-between;
+        width: 320px;
+    }
+
     .footer2,
     .footer3 {
         display: flex;
@@ -572,18 +564,11 @@
     }
 
     .footer2 {
-        height: 250px;
-    }
-
-    .a_container {
-        justify-self: end;
-        display: flex;
-        justify-content: space-between;
-        width: 500px;
+        height: 150px;
     }
 
     .footer3 {
-        height: 150px;
+        height: 100px;
     }
 
     .footer4 {
@@ -606,18 +591,6 @@
 
     /*images*/
 
-    .number_image {
-        position: absolute;
-        left: -85px;
-        top: -85px;
-        width: 240px;
-        height: 240px;
-    }
-
-    .blog_images {
-        width: 500px;
-        height: 690px;
-    }
 
     #logo_header {
         width: 108px;
@@ -629,9 +602,6 @@
         height: 38.56px;
     }
 
-    #bigger_number_image {
-        width: 275px;
-    }
 
     /*buttoms*/
     .button {
@@ -655,16 +625,6 @@
 
 
     /*h*/
-    .h1 {
-        width: 950px;
-        height: 300px;
-        margin: 0;
-        font-family: "Playfair Display", serif;
-        font-size: 88px;
-        line-height: 100px;
-        font-weight: bold;
-        font-style: italic
-    }
 
     .h3 {
         grid-row: 3/4;
@@ -1042,7 +1002,6 @@
 }
 
 body {
-
     font-family: "Red Hat Display", Arial, sans-serif;
     font-weight: bold;
     color: #FFFFFF;
