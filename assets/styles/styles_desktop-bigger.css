@@ -61,10 +61,6 @@
         width: 98px;
         height: 24px;
         padding: 0;
-        font-family: "Red Hat Display", Arial, sans-serif;
-        font-weight: bold;
-        font-size: 17px;
-        color: #FFFFFF;
     }
 
     .contaner_header {
@@ -112,11 +108,8 @@
         width: 950px;
         height: 300px;
         margin: 0;
-        font-family: "Playfair Display", serif;
         font-size: 88px;
         line-height: 100px;
-        font-weight: bold;
-        font-style: italic
     }
 
     .scroll-down_div {
@@ -231,9 +224,7 @@
         width: 278px;
         height: 22px;
 
-        letter-spacing: 6px;
         font-weight: 900;
-        color: #FBD784;
     }
 
     .h4_div2 {
@@ -250,7 +241,6 @@
         height: 154px;
         margin: 0;
 
-        font-family: "Playfair Display", serif;
         font-size: 64px;
     }
 
@@ -271,8 +261,6 @@
         width: 127px;
         height: 22px;
         padding: 0;
-
-        color: #FBD784;
     }
 
     .blog_images {
@@ -325,15 +313,8 @@
         height: 150px;
     }
 
-    .footer4 {
-        font-weight: normal;
-        font-style: italic;
-    }
-
     .p_footer {
         margin: 0;
-
-        color: #FBD784;
     }
 
     a {

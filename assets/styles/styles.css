@@ -11,6 +11,13 @@ body {
     height: 24px;
 }
 
+.account_buttom {
+    font-family: "Red Hat Display", Arial, sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+    color: #FFFFFF;
+}
+
 .yellow-div_header {
     display: flex;
     justify-content: space-between;
@@ -34,7 +41,37 @@ body {
     color: #FBD784;
 }
 
+.h1 {
+    font-family: "Playfair Display", serif;
+    font-weight: bold;
+    font-style: italic
+}
+
+.h4_div {
+    letter-spacing: 6px;
+    color: #FBD784;
+}
+
+.h3 {
+
+    font-family: "Playfair Display", serif;
+}
+
+.article_button {
+    color: #FBD784;
+}
+
 #logo_footer {
     width: 108.51px;
     height: 38.56px;
+}
+
+
+.p_footer {
+    color: #FBD784;
+}
+
+.footer4 {
+    font-weight: normal;
+    font-style: italic;
 }
